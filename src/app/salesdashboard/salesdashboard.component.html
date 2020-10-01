@@ -1,0 +1,165 @@
+  <div style="background-color: #EFF3F6;;">
+  <div style="margin-right: 20px;">
+    <div class="salesrep">
+        <p class="salestext">All Sales Reps <img src="assets/ico-down-arrow.png" style="padding-left: 16px;"></p>
+        
+    </div>
+    <div class="topbottom">
+        <button mat-button class="top">TOP</button>
+        <button mat-button class="bottom">BOTTOM</button>
+      
+    </div>
+</div>
+</div>
+
+<div style="  position: relative; background-color: #EFF3F6;">
+    <img src="assets/funnel.png" style="width: 615px; height: 760px; margin: 40px;">
+    <div class="centered">
+
+        <p class="text">Lead in</p>
+        <p class="number">25</p>
+        
+        <p class="text">Contact Made</p>
+        <p class="number">18</p>
+        
+        <p class="text">Needs defined</p>
+        <p class="number">12</p>
+        
+        <p class="text">Proposal Made</p>
+        <p class="number">8</p>
+        
+        <p class="text">Negotiations started</p>
+        <p class="number">5</p>
+        
+        <p class="text" style="font-weight: bold; font-size: 48px; margin-bottom: 29px;">WON</p>
+        <p class="number">3</p>
+    </div>
+
+    <div class="contentblock">
+        <div>
+            <div class="contentfirst">
+                <img src="assets/ico-calls.png" class="imgstyle">
+                <p class="calls">CALLS</p>
+                <p class="divide">10/15</p>
+            </div>
+            <div class="contentsecond">
+                <img src="assets/winner.png"  class="winnerimg">
+                <h1 class="name">John Doe</h1>
+                <p><span class="cusname">New MRR</span>    <span class="cuscost">5230</span></p>
+                <p><span class="cusname">New Logos</span>    <span class="cuscost">102</span></p>
+                <p><span class="cusname">Demo Calls</span>    <span class="cuscost">30</span></p>
+            </div>
+        </div>
+        <div>
+            <div class="contentfirst">
+                <img src="assets/ico-wins.png" class="imgstyle">
+                <p class="calls">WINS</p>
+                <p class="divide">1/3</p>
+            </div>
+            <div class="contentsecond" style="background-color: #2196f3;">
+              <img src="assets/winner.png"  class="winnerimg">
+                <h1 class="name">Jane Smith</h1>
+                <p><span class="cusname">New MRR</span>    <span class="cuscost">4586</span></p>
+                <p><span class="cusname">New Logos </span>   <span class="cuscost">95</span></p>
+                <p><span class="cusname">Demo Calls </span>   <span class="cuscost">23</span></p>
+            </div>
+        </div>
+        <div>
+            <div class="contentfirst">
+                <img src="assets/ico-revenue.png" class="imgstyle">
+                <p class="calls">INCREMENTED <br>REVENUE</p>
+                <p class="divide">80K/100K</p>
+            </div>
+            <div class="contentsecond" style="background-color: #64B5F6">
+              <img src="assets/winner.png"  class="winnerimg">
+                <h1 class="name">Ethan Hunt</h1>
+                <p><span class="cusname">New MRR</span>    <span class="cuscost">3500</span></p>
+                <p><span class="cusname">New Logos</span>    <span class="cuscost">82</span></p>
+                <p><span class="cusname">Demo Calls</span>    <span class="cuscost">10</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <h2 class="details">Details</h2>
+</div>
+<div>
+<table mat-table [dataSource]="dataSource1" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+    <ng-container matColumnDef="salesrep">
+      <th mat-header-cell *matHeaderCellDef> Sales Rep </th>
+      <td class="rowstyleshort" mat-cell *matCellDef="let element; let i= index;"
+      [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.salesrep}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef> Date </th>
+      <td class="rowstyleshort" mat-cell *matCellDef="let element; let i= index;"
+      [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.date}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="client">
+      <th mat-header-cell *matHeaderCellDef> Client </th>
+      <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;"
+      [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.client}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="cntperson">
+      <th mat-header-cell *matHeaderCellDef> Primary Contact Person </th>
+      <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;"
+      [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.cntperson}} </td>
+    </ng-container>
+  
+     <!-- Symbol Column -->
+     <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef> Title </th>
+        <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;"
+        [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.title}} </td>
+      </ng-container>
+
+          <!-- Position Column -->
+    <ng-container matColumnDef="vertical">
+        <th mat-header-cell *matHeaderCellDef> Vertical </th>
+        <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;"
+        [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.vertical}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="location">
+        <th mat-header-cell *matHeaderCellDef> Meeting Location </th>
+        <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;"
+        [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.location}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="interaction">
+        <th mat-header-cell *matHeaderCellDef> Purpose of Interaction </th>
+        <td class="rowstylelong"  mat-cell *matCellDef="let element; let i= index;"
+        [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.interaction}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="outcomeandremark">
+        <th mat-header-cell *matHeaderCellDef> Outcome and Remarks </th>
+        <td class="rowstylelong"  mat-cell *matCellDef="let element; let i= index;"
+        [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.outcomeandremark}} </td>
+      </ng-container>
+    
+       <!-- Symbol Column -->
+       <ng-container matColumnDef="status">
+          <th mat-header-cell *matHeaderCellDef> Engagement Status </th>
+          <td class="rowstyleshort"  mat-cell *matCellDef="let element; let i= index;" 
+          [ngClass]="i %2 == 0 ? 'colors' : ''" > {{element.status}}  {{i}} </td>
+        </ng-container>
+        
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

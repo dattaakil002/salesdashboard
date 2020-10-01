@@ -1,0 +1,228 @@
+table {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-width: 0px; */
+    box-shadow: none;  }
+
+// td{
+//     width: 16%;
+// }
+
+th{
+    font-size: 13px;
+    /* font-size: medium; */
+    color: #231f20;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.rowstyleshort{
+    // width: 8%;
+    // padding: 10px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500px;
+    color: #231f20;
+    font-family: sans-serif;
+    border-color: #e4e8ec;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.rowstylelong{
+    // width: 15%;
+    // padding: 17px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: 500px;
+    color: #231f20;
+    font-family: sans-serif;
+    border-color: #e4e8ec;
+    width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.colors{
+    background-color: #f8f9fb;
+}
+  
+.centered{
+    position: absolute;
+    width: 180px;
+    height: 506px;
+    top: 60px;
+    left: 258px;
+    text-align: center;
+    display: inline-block;
+}
+
+.top:focus{
+    border-bottom: 3px solid blue;
+}
+
+.bottom:focus{
+    border-bottom: 3px solid blue;
+}
+
+.salesrep{
+    width: 70%;
+    height: 50px;
+    border: 1px solid white;
+    display: inline-block;
+    margin-right: 41px;
+    margin-left: 41px;
+    margin-top: 20px;
+    background: white;
+}
+
+.topbottom{
+    width: 23%;
+    height: 50px;
+    float: right;
+    margin-top: 19px;
+    display: inline-block;
+    margin-right: 20px;
+    background: white;
+}
+
+.top{
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    border: 0px;
+    font-weight: 600;
+    opacity: 0.5;
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+    background: white;
+}
+
+.bottom{
+    width: 50%;
+    height: 100%;
+    font-size: 14px;
+    border: 0px;
+    font-weight: 600;
+    opacity: 0.5;
+    color: #2c3e50;
+    background: white;
+}
+
+.text{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.number{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 65px;
+}
+
+.salestext{
+    margin: 16px;
+    margin-left: 32px;
+    font-size: 14px;
+    color: #2c3e50;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+.contentblock{
+    width: 800px;
+    height: 615px;
+    display: inline-block;
+    float: right;
+    margin: 40px;
+}
+
+.contentfirst{
+    width: 44%;
+    height: 220px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-left: 45px;
+    margin-right: 20px;
+    text-align: right;
+    background: white;
+    margin-bottom: 40px;
+}
+
+.imgstyle{
+    margin-right: 250px;
+    margin-top: 20px;
+}
+
+
+.calls{
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-right: 32px;
+}
+
+.divide{
+    font-size: 48px;
+    font-weight: bold;
+    color: #2196f3;
+    margin-right: 30px;
+    margin-top: 22px;
+}
+
+.contentsecond{
+    width: 44%;
+    height: 220px;
+    float: right;
+    display: inline-block;
+    border-radius: 7px;
+    background: #1976d2;
+    text-align: center;
+}
+
+.name{
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 31px;
+}
+
+.cusname{
+    font-size: 18px;
+    color: #ffffff;
+    float: left;
+    margin-left: 60px;
+}
+
+.cuscost{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.winnerimg{
+    position: absolute;
+    float: right;
+    width: 10%;
+    height: 145px;
+    margin-top: 75px;
+    margin-left: -80px;
+}
+
+.details{
+    font-size: 24px;
+    color: #231f20;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    padding-left: 13px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
